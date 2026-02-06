@@ -4,17 +4,84 @@
     <meta charset="UTF-8">
     <title>Falchi Motor Club</title>
     <style>
+        /* --- 1. ZONA ESTETICA (CSS) --- */
         body { 
             font-family: 'Segoe UI', sans-serif; 
             margin: 0; 
             padding: 0;
-            /* IMMAGINE DI SFONDO */
             background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('sfondo.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
             color: white;
         }
+
+        /* Barra di navigazione in alto */
+        nav {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Menu a tendina */
+        .dropdown { position: relative; display: inline-block; }
+        
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 20px 25px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover { background-color: #e74c3c; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown:hover .dropbtn { color: #e74c3c; }
+
+        /* Contenuti */
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        .logo { width: 120px; height: auto; border-radius: 50%; border: 3px solid #e74c3c; }
+        h1 { color: #e74c3c; font-size: 3em; margin: 10px 0; }
+        .content-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
         <nav>
     <ul>
         <li><a href="index.html" class="dropbtn" style="text-decoration: none;">Home</a></li>
@@ -30,48 +97,6 @@
         <li><a href="contatti.html" class="dropbtn" style="text-decoration: none;">Contatti</a></li>
     </ul>
 </nav>
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        /* STILE DEL LOGO */
-        .logo {
-            width: 150px; /* Regola la grandezza */
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 50%; /* Se vuoi il logo tondo */
-        }
-
-        header {
-            border-bottom: 3px solid #e74c3c;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-        }
-
-        h1 { color: #e74c3c; font-size: 3em; text-transform: uppercase; margin: 10px 0; }
-
-        .content-box {
-            background: rgba(0, 0, 0, 0.6); /* Sfondo semitrasparente per leggere meglio */
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        ul { list-style: none; padding: 0; }
-        li { 
-            background: #e74c3c; 
-            margin: 10px 0; 
-            padding: 10px; 
-            border-radius: 5px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
     <div class="container">
         <header>
             <img src="logo.png" alt="Logo Falchi Motor Club" class="logo">
