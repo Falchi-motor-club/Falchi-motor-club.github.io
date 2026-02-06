@@ -34,7 +34,37 @@
     </style>
 </head>
 <body>
+<div class="content-box" style="text-align: center;">
+    <h2 style="color: #e74c3c; margin-top: 0;">Prossimo Raduno: Passo del Rombo 🏔️</h2>
+    <div id="countdown" style="font-size: 2.5em; font-weight: bold; letter-spacing: 2px; color: white;">
+        00d 00h 00m 00s
+    </div>
+    <p style="margin-bottom: 0; color: #888;">Preparate le tute, mancano solo...</p>
+</div>
 
+<script>
+// IMPOSTA LA DATA DEL RADUNO QUI (Anno, Mese -1, Giorno, Ora, Minuti)
+// Nota: i mesi partono da 0 (Gennaio è 0, Febbraio è 1, ecc.)
+var countDownDate = new Date(2026, 4, 24, 9, 0, 0).getTime(); 
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Siamo in sella! 🏍️";
+  }
+}, 1000);
+</script>
     <nav>
         <ul>
             <li><button class="dropbtn" onclick="location.href='index.html'">Home</button></li>
