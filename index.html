@@ -85,16 +85,21 @@
         text-align: center; 
     }
 
-    .logo { 
+.logo { 
     width: 120px; 
     height: auto; 
     border-radius: 50%; 
     border: 3px solid #e74c3c; 
     margin-bottom: 10px;
+
+    /* Rimuovi background-color se lo avevi messo */
+    background-color: transparent; 
+
+    /* EFFETTO LUMINOSITÀ: crea un alone che stacca il logo dal fondo scuro */
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.4)); 
     
-    opacity: 1 !important; /* Forza l'immagine a non essere trasparente */
-    filter: drop-shadow(0px 0px 8px rgba(231, 76, 60, 0.6)); /* Aggiunge un alone rosso */
-    background-color: black; /* Se il logo è un PNG trasparente, questo gli dà un fondo solido */
+    /* Assicuriamoci che non ci siano filtri che lo scuriscono */
+    brightness: 1.1; 
 }
     h1 { color: #e74c3c; font-size: 3em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
     
