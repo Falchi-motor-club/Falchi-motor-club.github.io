@@ -17,7 +17,44 @@
     position: relative;
     display: inline-block;
 }
+/* Forza l'allineamento di tutti gli elementi della nav */
+nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Centra tutto verticalmente */
+}
 
+/* Assicura che i link e i bottoni abbiano la stessa altezza */
+.dropbtn, nav ul li a {
+    display: block;
+    background: none; 
+    color: white; 
+    padding: 20px 25px; 
+    font-size: 14px;
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1; /* Evita sbalzi di altezza */
+}
+
+/* Allinea il menu a tendina esattamente sotto il tasto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%; /* Lo sposta al centro rispetto al tasto */
+    transform: translateX(-50%); /* Lo centra perfettamente */
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    z-index: 1001;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
 /* Stile per il contenuto del menu (nascosto di base) */
 .dropdown-content {
     display: none;
@@ -136,7 +173,7 @@
 
 <nav>
     <ul>
-        <li><a href="index.html" class="dropbtn" style="text-decoration: none;">Home</a></li>
+        <li><a href="index.html" class="dropbtn">Home</a></li>
         
         <li class="dropdown">
             <button class="dropbtn">Le moto ▾</button>
@@ -154,7 +191,7 @@
             </div>
         </li>
 
-        <li><a href="contatti.html" class="dropbtn" style="text-decoration: none;">Contatti</a></li>
+        <li><a href="contatti.html" class="dropbtn">Contatti</a></li>
     </ul>
 </nav>
 
