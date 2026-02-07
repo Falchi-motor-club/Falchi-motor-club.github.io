@@ -12,7 +12,48 @@
             font-weight: 900;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.8); /* Per far risaltare il bianco */
         }
-        
+        /* Stile per il contenitore del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Stile per il contenuto del menu (nascosto di base) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9); /* Sfondo nero trasparente */
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    z-index: 1001;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* Stile per i link dentro il dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+/* Effetto hover sui link del menu */
+.dropdown-content a:hover {
+    background-color: #e74c3c; /* Rosso Falchi al passaggio del mouse */
+    color: white;
+}
+
+/* MOSTRA IL MENU QUANDO PASSI IL MOUSE */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
         /* COLORI LIVREA HONDA */
         .honda-white { color: #FFFFFF; }
         .honda-red { color: #E74C3C; } /* Rosso Falchi/Honda */
