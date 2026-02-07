@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW R 1300 GS - Antonio</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('sfondo.jpg');
+            background-size: cover; background-attachment: fixed; background-position: center; 
+            color: white;
+        }
 
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+        .dropbtn {
+            background: none; color: white; padding: 20px 30px; font-size: 14px;
+            border: none; cursor: pointer; font-weight: bold; text-transform: uppercase;
+        }
+
+        .container { max-width: 850px; margin: 120px auto 40px; padding: 20px; }
+
+        .article-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            line-height: 1.8;
+        }
+
+        .back-link { color: #3498db; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+
+        /* TITOLO SU DUE LINEE CON COLORI BMW */
+        h1 { margin: 0; font-size: 3.2em; line-height: 1.1; font-weight: 900; }
+        .bmw-blue { color: #0066b1; } /* Blu BMW */
+        .bmw-light { color: #00abea; } /* Azzurro BMW */
+        .subtitle { color: #888; font-style: italic; margin-bottom: 30px; letter-spacing: 2px; }
+
+        .main-photo {
+            width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        strong { color: #3498db; } /* Evidenzia in azzurro i punti chiave */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><button class="dropbtn" onclick="location.href='index.html'">Home</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <article class="article-box">
+            <a href="index.html" class="back-link">← Torna alla Home</a>
+            
+            <h1>
+                <span class="black-pearl-title">BMW R 1300 GS</span> <br> 
+                <span class="black-pearl-title">2024</span>
+                <br>
+                <span class="pearl-subtitle">THE BLACK PEARL</span>
+            </h1>
+            <p class="subtitle">La mia GS1300: la chiave per il mondo dell'avventura</p>
+
+            <img src="foto-bmw1300.jpg" alt="BMW R 1300 GS Antonio" class="main-photo">
+
+            <div style="text-align: justify; color: #ddd;">
+                <p>Era il 2017 quando ho deciso di comprare la mia prima moto, una <strong>Ducati Monster 600</strong>. All'inizio, i miei giri erano brevi e tranquilli, ma c'è qualcosa nella moto che ti entra nel sangue e ti fa desiderare di più. Piano piano, ho cominciato a pianificare viaggi più lunghi e a incontrare altri appassionati.</p>
+
+                <p>Dopo la Monster, sono passato alla <strong>Kawasaki Z750</strong>, la moto dei miei sogni di allora. Era solida e divertente, ma sentivo che mancava qualcosa. Volevo una moto che potesse gestire sia l'asfalto che lo sterrato, permettendomi di viaggiare con comodità. Così, sono approdato alla <strong>BMW GS 1200</strong>.</p>
+
+                <p>Ma il vero colpo di fulmine è scattato con la <strong>GS 1300</strong>. Dopo averla provata, ho capito che era quella giusta: equilibrata, precisa, superiore anche alla tentazione della Multistrada. Il mio primo viaggio nell'ottobre 2024 è stato un percorso di oltre <strong>3500 km</strong> da nord a sud dell'Italia. Un'esperienza incredibile che mi ha fatto capire che non mi sarei più fermato.</p>
+
+                <p>Nel 2025 ho continuato a esplorare la Francia, e la GS si è dimostrata una compagna eccezionale. Adesso sono pronto per la prossima grande sfida: <strong>Gibilterra</strong> con i miei amici dei Falchi. La mia GS1300 non è solo una moto, è la chiave che ha aperto il mio mondo dell'avventura.</p>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p style="font-style: italic; color: #3498db;">"Unisciti a me e scopriamo insieme il mondo! 😊"</p>
+            </div>
+
+        </article>
+    </div>
+
+</body>
+</html>
