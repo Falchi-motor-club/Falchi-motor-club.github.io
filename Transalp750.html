@@ -48,4 +48,69 @@
 
         .back-link { 
             color: #e74c3c; 
-            text
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 { color: #e74c3c; margin: 0; font-size: 2.5em; }
+        .subtitle { color: #888; font-style: italic; margin-bottom: 30px; }
+
+        .main-photo {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .main-photo:hover { transform: scale(1.01); }
+
+        strong { color: #e74c3c; } /* Mette in rosso le parole importanti */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><button class="dropbtn" onclick="location.href='index.html'">Home</button></li>
+            <li><button class="dropbtn" onclick="location.href='index.html#articoli'">Articoli</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <article class="article-box">
+            <a href="index.html" class="back-link">← Torna alla Home</a>
+            
+            <h1>Honda Transalp 750</h1>
+            <p class="subtitle">Alessio e il sogno diventato realtà</p>
+
+            <img src="foto-transalp.jpg" alt="Honda Transalp 750" class="main-photo">
+
+            <p>
+                Fin da quando ero piccolo, guardavo le moto passare con quel desiderio misto a timore, 
+                pensando che forse un giorno ne avrei guidata una anche io. Per anni quel sogno è rimasto 
+                chiuso in un cassetto, finché nell'<strong>aprile 2025</strong> ho deciso di non rimandare più: 
+                mi sono lanciato e sono salito in sella alla mia <strong>Honda Transalp 750</strong>.
+            </p>
+
+            <p>
+                Oggi, guardandomi indietro, posso dire che è stata la scelta migliore che potessi fare. 
+                Non avrei mai immaginato quanta felicità potesse regalare un motore: quella sensazione di 
+                libertà assoluta, l'idea che mi basti indossare il casco e girare la chiave per lasciarmi 
+                tutto alle spalle e partire in qualsiasi momento.
+            </p>
+
+            <p>
+                Dopo aver rotto il ghiaccio con i passi della Svizzera, ora il gioco si fa serio. 
+                Insieme ai miei amici di sempre e compagni di avventure del <strong>Falchi Motor Club</strong> 
+                (Antonio e Carmine) stiamo preparando quello che per me è il viaggio della vita: 
+                la <strong>traversata fino a Gibilterra</strong>.
+            </p>
+
+        </article>
+    </div>
+
+</body>
+</html>
