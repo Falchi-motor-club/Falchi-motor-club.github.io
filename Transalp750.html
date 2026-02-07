@@ -1,35 +1,51 @@
-<div class="container">
-    <article class="article-box">
-        <a href="index.html" class="back-link">← Torna alla Home</a>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Transalp 750 - Alessio</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('sfondo.jpg');
+            background-size: cover; 
+            background-attachment: fixed; 
+            background-position: center; 
+            color: white;
+        }
+
+        /* BARRA TRASPARENTE COERENTE */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
         
-        <h1 style="text-align: center;">Honda Transalp 750</h1>
-        <p style="text-align: center; color: #888; margin-top: -10px;">La compagna di avventure di Alessio</p>
+        .dropbtn {
+            background: none; color: white; padding: 20px 30px; font-size: 14px;
+            border: none; cursor: pointer; font-weight: bold; text-transform: uppercase;
+        }
 
-        <div style="width: 100%; margin: 25px 0;">
-            <img src="foto-transalp.jpg" alt="Honda Transalp 750" style="width: 100%; border-radius: 12px; border: 2px solid #e74c3c; box-shadow: 0 5px 20px rgba(0,0,0,0.6);">
-        </div>
+        .container { 
+            max-width: 850px; 
+            margin: 120px auto 40px; 
+            padding: 20px; 
+        }
 
-        <div style="line-height: 1.8; font-size: 1.1em; color: #eee; text-align: justify;">
-            <p>
-                Fin da quando ero piccolo, guardavo le moto passare con quel desiderio misto a timore, 
-                pensando che forse un giorno ne avrei guidata una anche io. Per anni quel sogno è rimasto 
-                chiuso in un cassetto, finché nell'aprile 2025 ho deciso di non rimandare più: 
-                mi sono lanciato e sono salito in sella alla mia <strong>Honda Transalp 750</strong>.
-            </p>
+        /* STILE "CONTENT-BOX" IDENTICO AL VIAGGIO IN SPAGNA */
+        .article-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            line-height: 1.8;
+        }
 
-            <p>
-                Oggi, guardandomi indietro, posso dire che è stata la scelta migliore che potessi fare. 
-                Non avrei mai immaginato quanta felicità potesse regalare un motore: quella sensazione di 
-                libertà assoluta, l'idea che mi basti indossare il casco e girare la chiave per lasciarmi 
-                tutto alle spalle e partire in qualsiasi momento.
-            </p>
-
-            <p>
-                Dopo aver rotto il ghiaccio con i passi della Svizzera, ora il gioco si fa serio. 
-                Insieme ai miei amici di sempre e compagni di avventure del <strong>Falchi Motor Club</strong> 
-                (Antonio e Carmine) stiamo preparando quello che per me è il viaggio della vita: 
-                la traversata fino a <strong>Gibilterra</strong>.
-            </p>
-        </div>
-
-        <div style="margin-top:
+        .back-link { 
+            color: #e74c3c; 
+            text
