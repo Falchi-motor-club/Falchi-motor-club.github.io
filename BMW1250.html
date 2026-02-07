@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW R 1250 GS - Carmine</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('sfondo.jpg');
+            background-size: cover; background-attachment: fixed; background-position: center; 
+            color: white;
+        }
 
+        /* --- NAVIGAZIONE SISTEMATA E ALLINEATA --- */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav ul { 
+            list-style: none; margin: 0; padding: 0; 
+            display: flex; justify-content: center; align-items: center; 
+        }
+
+        .dropbtn, nav ul li a {
+            background: none; color: white; padding: 20px 25px; font-size: 14px;
+            border: none; cursor: pointer; font-weight: bold; text-transform: uppercase;
+            text-decoration: none; display: block; line-height: 1;
+        }
+
+        /* LOGICA DROPDOWN */
+        .dropdown { position: relative; display: inline-block; }
+
+        .dropdown-content {
+            display: none; position: absolute; left: 50%; transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.9); min-width: 250px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.5); z-index: 1001;
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px;
+            overflow: hidden; backdrop-filter: blur(10px);
+        }
+
+        .dropdown-content a {
+            color: white; padding: 12px 16px; text-decoration: none;
+            display: block; font-size: 13px; text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s;
+        }
+
+        /* Colore azzurro BMW al passaggio del mouse nel menu */
+        .dropdown-content a:hover { background-color: #3498db; color: white; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* --- FINE NAVIGAZIONE --- */
+
+        .container { max-width: 850px; margin: 120px auto 40px; padding: 20px; }
+
+        .article-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            line-height: 1.8;
+        }
+
+        .back-link { color: #3498db; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+
+        /* STILE BLACK PEARL */
+        h1 { margin: 0; font-size: 3.2em; line-height: 1.1; font-weight: 900; }
+        
+        .black-pearl-title {
+            color: #000000;
+            text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555, 5px 5px 15px rgba(0,0,0,1);
+        }
+
+        .pearl-subtitle {
+            font-size: 0.5em; color: #555; letter-spacing: 8px; font-style: italic;
+            text-transform: uppercase; display: block; margin-top: 10px;
+        }
+
+        .main-photo {
+            width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        strong { color: #3498db; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="dropbtn">Home</a></li>
+        
+        <li class="dropdown">
+            <button class="dropbtn">Le moto ▾</button>
+            <div class="dropdown-content">
+                <a href="BMW1300.html">BMW R 1300 GS - Antonio</a>
+                <a href="BMW1250.html">BMW R 1250 GS - Carmine</a>
+                <a href="Transalp750.html">HONDA TRANSALP 750 - Alessio</a>
+            </div>
+        </li> 
+
+        <li class="dropdown">
+            <button class="dropbtn">Articoli ▾</button>
+            <div class="dropdown-content">
+                <a href="Spagna-2026.html">Spagna 2026</a>
+            </div>
+        </li>
+
+        <li><a href="contatti.html" class="dropbtn">Contatti</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <article class="article-box">
+            <a href="index.html" class="back-link">← Torna alla Home</a>
+            
+            <h1>
+                <span class="black-pearl-title">BMW R 1250 GS</span> <br> 
+                <br>
+                <span class="pearl-subtitle">ssssssssss</span>
+            </h1>
+            <p class="subtitle">sssssssssss</p>
+
+            <img src="foto-bmw1250.jpg" alt="BMW R 1250 GS Carmine" class="main-photo">
+
+            <div style="text-align: justify; color: #ddd;">
+                </div>
+
+            <div style="margin-top: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p style="font-style: italic; color: #3498db;">""</p>
+            </div>
+
+        </article>
+    </div>
+
+</body>
+</html>
